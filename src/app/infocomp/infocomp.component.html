@@ -1,0 +1,33 @@
+
+ <!-- <table class="table table-dark table-striped">
+    <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Person Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Delete Data</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let a of pdata ">
+          <th scope="row">1</th>
+          <td>{{a.prname}}</td>
+          <td>{{a.prmail}}</td>
+          <td><input type="button" value="Delete" (click)="deldata(a)"/></td>
+        </tr>
+      </tbody>
+  </table> -->
+  
+  <div class="maindiv">
+    
+     <div class="card child" *ngFor="let a of pdata" >
+         
+              <div class="card-body">
+                  <h5 class="card-title">{{a.prname}}</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">{{a.prmail}}</h6>
+                  <p class="card-text">Personal information includes a broad range of information, or an opinion, that could identify an individual.</p>
+                  <button (click)="deldata(a)">Delete</button>
+               </div>
+            
+       </div>
+    </div>

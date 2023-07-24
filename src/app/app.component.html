@@ -1,0 +1,21 @@
+<router-outlet></router-outlet>
+<div  class="maindiv">
+      <div class="card" style="width: 18rem; height: 20rem; flex-wrap: wrap;">
+         <div class="card-body">
+             <h5 class="card-title">{{Pname}}</h5>
+             <h6 class="card-subtitle mb-2 text-muted">{{Pmail}}</h6>
+             <p class="card-text">Personal information includes a broad range of information, or an opinion, that could identify an individual.</p>
+             <input appCartdirective type="email" name="Pmail" [(ngModel)]="Pmail"/>
+             <input appCartdirective type="person" name="Pname" [(ngModel)]="Pname"/>
+             <button appCartdirective (click)="submitemail()">Submit</button>
+         </div>
+      </div>
+</div>
+
+<div class="plain"><p>Stored Data</p></div>
+<div>
+  
+  
+<app-infocomp [pdata]="parr" (datasend)="fetch($event)"></app-infocomp>
+
+</div>

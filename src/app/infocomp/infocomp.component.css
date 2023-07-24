@@ -1,0 +1,24 @@
+.maindiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-color: thistle;
+     color: white;
+     margin: 10px;
+  }
+
+  .card {
+    width: 18rem;
+    height: 20rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    border-color: rgb(190, 148, 190);
+    background-color: thistle;
+  }
+
+  button{
+    border-color: rgb(190, 148, 190);
+    color:white;
+    background-color: rgb(190, 148, 190);
+
+  }
